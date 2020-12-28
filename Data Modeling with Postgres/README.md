@@ -23,7 +23,8 @@ I create a Relational Database with star schema. The star schema contains denorm
 **time**
 * *start_time, hour, day, week, month, year, weekday*
 
-<img src="https://github.com/shanrulin/Data-Engineer-project/blob/main/ER.png" width="800" height="800">
+<img src="https://github.com/shanrulin/Data-Engineer-project/blob/main/ER.png" width="800" height="700">
+
 ## Files to build database and ETL
 1. `create_tables.py`: a main Python script to create needed tables
 2. `sql_queries.py`: all the sql queries to create tables, insert data and find needed data

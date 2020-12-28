@@ -6,11 +6,11 @@ A startup company called Sparkify is interested in understanding what songs user
 ## Schema
 I create a Relational Database with star schema. The star schema contains denormalized tables, so it will simplify queries and has fast aggrgation benefit. These advantages could allow Sparkify to do heavy reads on the database. 
 
-### Fact Table
+#### Fact Table
 **songplays** 
 * *songplay_id, start_time, user_id, level, song_id, artist_id, session_id, location, user_agent)*
 
-### Dimension Tables
+#### Dimension Tables
 **users** 
 * *user_id, first_name, last_name, gender, level*
 

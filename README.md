@@ -24,6 +24,7 @@ I create a Relational Database with star schema. The star schema contains denorm
 
 **time**
 * *start_time, hour, day, week, month, year, weekday*
+
 Timestamp Reference
 [Convert Unix epoch time into Redshift timestamps](https://dwgeek.com/convert-unix-epoch-time-into-redshift-timestamps.html/)
 [Redshift Epochs and Timestamps](https://www.fernandomc.com/posts/redshift-epochs-and-timestamps/)
@@ -39,4 +40,5 @@ Starting with `create_tables.py` script, and it creates tables using queries in 
 Debug note:
 **stl_load_errors** is a system table in Redshift that contains records for all failed loading jobs.
 You could use the statement as follow 
+
 ```select * from stl_load_errors;```

@@ -31,9 +31,7 @@ Timestamp Reference:
 [Redshift Epochs and Timestamps](https://www.fernandomc.com/posts/redshift-epochs-and-timestamps/) 
 
 Note:  
-Setting dimensional tables' ID fields as SORT KEY because they are (expected to be) often used in JOIN operations especially when querying the songplays table.
-
-DISTSTYLE ALL for all dimensional tables since they are small enough to be distributed to all nodes.
+Setting dimensional tables' ID fields as SORT KEY because they are (expected to be) often used in JOIN operations especially when querying the songplays table. DISTSTYLE ALL for all dimensional tables since they are small enough to be distributed to all nodes.
 
 ## Process
 Starting with `create_tables.py` script, and it creates tables using queries in `sql_queries.py`. After that, execute the `etl.py` script, and it builds ETL pipeline to first copy data from S3 to staging tables, and then insert data from staging data to Fact table and Dimension tables using queries in `sql_queries.py`

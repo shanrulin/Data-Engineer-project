@@ -23,14 +23,13 @@ I create a Relational Database with star schema. The star schema contains denorm
 * *artist_id, name, location, latitude, longitude*
 
 **time**
-* *start_time, hour, day, week, month, year, weekday*
+* *start_time, hour, day, week, month, year, weekday* <br/>
 
 Timestamp Reference:
 
 [Convert Unix epoch time into Redshift timestamps](https://dwgeek.com/convert-unix-epoch-time-into-redshift-timestamps.html/)
 
-[Redshift Epochs and Timestamps](https://www.fernandomc.com/posts/redshift-epochs-and-timestamps/)
-
+[Redshift Epochs and Timestamps](https://www.fernandomc.com/posts/redshift-epochs-and-timestamps/) <br/>
 
 Note: 
 Setting dimensional tables' ID fields as SORT KEY because they are (expected to be) often used in JOIN operations especially when querying the songplays table.

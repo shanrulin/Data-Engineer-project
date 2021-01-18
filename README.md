@@ -26,7 +26,7 @@ I create a Relational Database with star schema. The star schema contains denorm
 * *start_time, hour, day, week, month, year, weekday* 
 
 
-Timestamp Reference:
+Timestamp Reference:  
 [Convert Unix epoch time into Redshift timestamps](https://dwgeek.com/convert-unix-epoch-time-into-redshift-timestamps.html/) 
 [Redshift Epochs and Timestamps](https://www.fernandomc.com/posts/redshift-epochs-and-timestamps/) 
 

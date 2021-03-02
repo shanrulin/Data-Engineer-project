@@ -4,4 +4,4 @@ A startup company called Sparkify is interested in understanding what songs user
 The source data resides in S3 and needs to be processed in Sparkify's data warehouse in Amazon Redshift. The source datasets consist of JSON logs that tell about user activity in the application and JSON metadata about the songs the users listen to.
 
 ## Process
-<img src="https://github.com/shanrulin/Data-Engineer-project/DAG.png">
+<img src="https://github.com/shanrulin/Data-Engineer-project/blob/main/DAG.PNG">

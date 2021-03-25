@@ -39,7 +39,7 @@ I build an ETL pipeline that extracts data from S3, processes them using Spark, 
 
 
 ## Addressing Other Scenarios
-* The data was increased by 100x
+* The data was increased by 100x <br>
 Data is store in S3, and work on AWS EMR, so one could scale up the hardware configuration.
 
 * The pipelines would be run on a daily basis by 7 am every day

@@ -10,29 +10,30 @@ I build an ETL pipeline that extracts data from S3, processes them using Spark, 
 
 Steps
 * drop duplicate rows, check if dataset contains 51 states, and save in csv format
-
-
+<br>
+<br>
 **Daily Temperature of Major Cities**: The [dataset](https://www.kaggle.com/sudalairajkumar/daily-temperature-of-major-cities) came from Kaggle and the University of Dayton for making this dataset available in the first place. The data fields in each file posted on this site are: month, day, year, average daily temperature (F). "-99" as a no-data flag when data are not available. I use this data and state table to build a temerature dimension table
 
 Steps
 * create **date** column from **year**, **month**, and **day**
 * drop duplicate rows and select subset of the dataset to reduce size
 * use spark sql to combine temperature dataset and state table to create a temperature table with state code column, and save in parquet file
-
+<br>
+<br>
 **U.S. City Demographic Data**: This [data](https://public.opendatasoft.com/explore/dataset/us-cities-demographics/export/) comes from OpenSoft. Use this data to create a demographic dimension table.
 
 Steps
 * define schema, drop state column, drop duplicate rows, and save in parquet file
-
-
+<br>
+<br>
 **Airport Code Table**: This [dataset](https://datahub.io/core/airport-codes#data) comes from Datahub. Use this data to build a airport dimension table.
 
 Steps
 * define schema, drop continent column, which has many missing values, and drop duplicate ident column
 * create **state_code** from **iso_region**, and create **latitude** and **longitude** from **coordinates**
 * save airport table to parquet file
-
-
+<br>
+<br>
 **I94 Immigration Data**: This [data](https://travel.trade.gov/research/reports/i94/historical/2016.html) comes from the US National Tourism and Trade Office. A data dictionary called I94_SAS_Labels_Descriptions is included. The dataset is used to build a Fact table that records immigration activities.
 
 Steps

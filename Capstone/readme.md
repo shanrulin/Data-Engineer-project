@@ -34,7 +34,7 @@ I build an ETL pipeline that extracts data from S3, processes them using Spark, 
 * check data type of **arrival_date** and **departure_date**
 * check if any rows in immigration table
 
-<img src="https://github.com/shanrulin/Data-Engineer-project/blob/main/capstone_ER.PNG" width="800" height="700">
+<img src="https://github.com/shanrulin/Data-Engineer-project/blob/main/capstone_ER.PNG">
 
 ## Addressing Other Scenarios
 * The data was increased by 100x

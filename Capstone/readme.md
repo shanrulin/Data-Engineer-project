@@ -35,7 +35,7 @@ I build an ETL pipeline that extracts data from S3, processes them using Spark, 
 * check if any rows in immigration table
 
 
-<img src="https://github.com/shanrulin/Data-Engineer-project/blob/main/capstone_ER.PNG">
+<img src="https://github.com/shanrulin/Data-Engineer-project/blob/main/capstone_ER.png" width="800" height="700">
 
 
 ## Addressing Other Scenarios

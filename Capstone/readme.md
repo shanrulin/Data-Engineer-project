@@ -14,7 +14,7 @@ I build an ETL pipeline that extracts data from S3, processes them using Spark, 
 
 **Daily Temperature of Major Cities**: The [dataset](https://www.kaggle.com/sudalairajkumar/daily-temperature-of-major-cities) came from Kaggle and the University of Dayton for making this dataset available in the first place. The data fields in each file posted on this site are: month, day, year, average daily temperature (F). "-99" as a no-data flag when data are not available. I use this data and state table to build a temerature dimension table
 
-  Steps
+  - Steps
 * create **date** column from **year**, **month**, and **day**
 * drop duplicate rows and select subset of the dataset to reduce size
 * use spark sql to combine temperature dataset and state table to create a temperature table with state code column, and save in parquet file
